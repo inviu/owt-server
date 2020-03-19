@@ -27,6 +27,7 @@ const {
   filterExt,
   addAudioSSRC,
   addVideoSSRC,
+  getAudioDirection,
 } = require('./sdp');
 
 var addon = require('../webrtcLib/build/Release/webrtc');
@@ -370,7 +371,7 @@ module.exports = function (spec, on_status, on_mediaUpdate) {
       wrtc.setSimulcastInfo(simulcastInfo);
 
       //aoqi add 修复pc端不playout不能record
-      if (audio) {
+      if (getAudioDirection(sdp)=='sendrecv') {
         audioFramePacketizer = new AudioFramePacketizer();
         audioFramePacketizer.bindTransport(wrtc.getMediaStream(wrtcId));
       }

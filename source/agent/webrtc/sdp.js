@@ -495,3 +495,15 @@ exports.addVideoSSRC = function (sdp, ssrc) {
   }
   return transform.write(sdpObj);
 };
+
+//aoqi add
+exports.getAudioDirection = function (sdp) {
+  const sdpObj = transform.parse(sdp);
+  if (sdpObj.msidSemantic) {
+    for (const media of sdpObj.media) {
+      if (media.type == 'audio') {
+        return media.direction;
+      }
+    }
+  }
+};
