@@ -179,10 +179,12 @@ module.exports = function (spec, on_status, on_mediaUpdate) {
         });
         if (audioFramePacketizer) {
           const aSsrc = audioFramePacketizer.ssrc();
+          // log.debug('Answer SDP audioFramePacketizer', aSsrc);
           message = addAudioSSRC(message, aSsrc);
         }
         if (videoFramePacketizer) {
           const vSsrc = videoFramePacketizer.ssrc();
+          // log.debug('Answer SDP videoFramePacketizer', aSsrc);
           message = addVideoSSRC(message, vSsrc);
         }
         if (isSimulcast) {
@@ -366,7 +368,14 @@ module.exports = function (spec, on_status, on_mediaUpdate) {
       log.debug('SDP ssrc:', aSsrc, vSsrc);
       wrtc.setRemoteSsrc(aSsrc, vSsrc, '');
       wrtc.setSimulcastInfo(simulcastInfo);
-    } else {
+
+      //aoqi add 修复pc端不playout不能record
+      if (audio) {
+        audioFramePacketizer = new AudioFramePacketizer();
+        audioFramePacketizer.bindTransport(wrtc.getMediaStream(wrtcId));
+      }
+    } 
+    else {
       if (audio) {
         audioFramePacketizer = new AudioFramePacketizer();
         audioFramePacketizer.bindTransport(wrtc.getMediaStream(wrtcId));

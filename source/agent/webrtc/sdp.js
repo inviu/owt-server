@@ -458,6 +458,8 @@ exports.addAudioSSRC = function (sdp, ssrc) {
     const msid = sdpObj.msidSemantic.token;
     for (const media of sdpObj.media) {
       if (media.type == 'audio') {
+        //aoqi add
+        media.direction='sendrecv'
         if (!media.ssrcs) {
           media.ssrcs = [
             {id: ssrc, attribute: 'cname', value: 'o/i14u9pJrxRKAsu'},
@@ -479,6 +481,8 @@ exports.addVideoSSRC = function (sdp, ssrc) {
     for (const media of sdpObj.media) {
       if (media.type == 'video') {
         if (!media.ssrcs) {
+          //aoqi add
+          media.direction='sendrecv'
           media.ssrcs = [
             {id: ssrc, attribute: 'cname', value: 'o/i14u9pJrxRKAsu'},
             {id: ssrc, attribute: 'msid', value: `${msid} v0`},
