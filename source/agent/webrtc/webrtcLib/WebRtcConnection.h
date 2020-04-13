@@ -47,7 +47,7 @@
  */
 class WebRtcConnection : public MediaSink, public erizo::WebRtcConnectionEventListener {
  public:
-    static NAN_MODULE_INIT(Init);
+    static void Init(v8::Local<v8::Object> target);
 
     std::shared_ptr<erizo::WebRtcConnection> me;
     int eventSt;

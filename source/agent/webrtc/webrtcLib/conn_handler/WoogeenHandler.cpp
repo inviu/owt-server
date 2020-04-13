@@ -4,7 +4,7 @@
 
 #include "WoogeenHandler.h"
 #include "MediaStream.h"
-#include <rtputils.h>
+#include "../../../../core/common/rtputils.h"
 
 namespace erizo {
 

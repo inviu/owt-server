@@ -5,7 +5,6 @@
 #ifndef RTPUTILS_H_
 #define RTPUTILS_H_
 
-#include <netinet/in.h>
 
 #include "rtp/Rtcp.h"
 #include "rtp/RtpHeader.h"

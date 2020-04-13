@@ -106,7 +106,7 @@ int32_t VCMFrameEncoder::generateStream(uint32_t width, uint32_t height, uint32_
                 simulcastId = i;
                 boost::shared_ptr<EncodeOut> encodeOut;
                 encodeOut.reset(new EncodeOut(m_streamId, this, dest));
-                OutStream stream = {.width = width, .height = height, .simulcastId = simulcastId, .encodeOut = encodeOut};
+                OutStream stream = {width, height, simulcastId, encodeOut};
                 boost::upgrade_to_unique_lock<boost::shared_mutex> uniqueLock(lock);
                 m_streams[m_streamId] = stream;
                 ELOG_DEBUG_T("generateStream: {.width=%d, .height=%d}, simulcastId=%d", width, height, simulcastId);
@@ -242,7 +242,7 @@ int32_t VCMFrameEncoder::generateStream(uint32_t width, uint32_t height, uint32_
 
     boost::shared_ptr<EncodeOut> encodeOut;
     encodeOut.reset(new EncodeOut(m_streamId, this, dest));
-    OutStream stream = {.width = width, .height = height, .simulcastId = simulcastId, .encodeOut = encodeOut};
+    OutStream stream = {width, height, simulcastId, encodeOut};
     m_streams[m_streamId] = stream;
     ELOG_DEBUG_T("generateStream: {.width=%d, .height=%d, .frameRate=%d, .bitrateKbps=%d, .keyFrameIntervalSeconds=%d}, simulcastId=%d, adaptiveMode=%d"
             , width, height, frameRate, bitrateKbps, keyFrameIntervalSeconds, simulcastId, m_isAdaptiveMode);

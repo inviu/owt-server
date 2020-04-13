@@ -4,7 +4,8 @@
 
 #include "VideoFramePacketizer.h"
 #include "MediaUtilities.h"
-#include <rtputils.h>
+#include "../common/rtputils.h"
+
 
 namespace owt_base {
 
@@ -74,7 +75,7 @@ void VideoFramePacketizer::enable(bool enabled)
 {
     m_enabled = enabled;
     if (m_enabled) {
-        FeedbackMsg feedback = {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+        FeedbackMsg feedback = {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
         deliverFeedbackMsg(feedback);
         m_keyFrameArrived = false;
         m_sendFrameCount = 0;
@@ -135,7 +136,7 @@ bool VideoFramePacketizer::setSendCodec(FrameFormat frameFormat, unsigned int wi
 void VideoFramePacketizer::OnReceivedIntraFrameRequest(uint32_t ssrc)
 {
     ELOG_DEBUG("onReceivedIntraFrameRequest.");
-    FeedbackMsg feedback = {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+    FeedbackMsg feedback = {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
     deliverFeedbackMsg(feedback);
 }
 
@@ -276,7 +277,7 @@ void VideoFramePacketizer::onFrame(const Frame& frame)
     if (!m_keyFrameArrived) {
         if (!frame.additionalInfo.video.isKeyFrame) {
             ELOG_DEBUG("Key frame has not arrived, send key-frame-request.");
-            FeedbackMsg feedback = {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+            FeedbackMsg feedback = {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
             deliverFeedbackMsg(feedback);
             return;
         } else {
@@ -295,7 +296,7 @@ void VideoFramePacketizer::onFrame(const Frame& frame)
                 || (m_sendFrameCount == 60)
                 || (m_sendFrameCount == 150)) {
                 ELOG_DEBUG("Self generated key-frame-request.");
-                FeedbackMsg feedback = {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+                FeedbackMsg feedback = {VIDEO_FEEDBACK,  REQUEST_KEY_FRAME};
                 deliverFeedbackMsg(feedback);
             }
             m_sendFrameCount += 1;
@@ -383,7 +384,7 @@ void VideoFramePacketizer::onVideoSourceChanged()
 
 int VideoFramePacketizer::sendFirPacket()
 {
-    FeedbackMsg feedback = {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+    FeedbackMsg feedback = {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
     deliverFeedbackMsg(feedback);
     return 0;
 }

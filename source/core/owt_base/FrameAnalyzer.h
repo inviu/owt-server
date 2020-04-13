@@ -62,7 +62,7 @@ private:
     //boost::scoped_ptr<rvaPlugin> m_plugin;
     std::string plugin_guid_;
     std::string plugin_name_;
-    void* plugin_handle_;
+    HMODULE plugin_handle_;
     rvaPlugin* plugin_;
     rva_create_t* create_plugin;
     rva_destroy_t* destroy_plugin;

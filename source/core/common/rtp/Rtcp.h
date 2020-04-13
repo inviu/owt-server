@@ -5,8 +5,14 @@
 #ifndef RTCP_H_
 #define RTCP_H_
 
+// #include <netinet/in.h>
+#ifdef WIN32
+#include <winsock2.h>
+#include <Windows.h>
+#include <stdint.h>
+#else
 #include <netinet/in.h>
-
+#endif
 //  0                   1                   2                   3
 //  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+

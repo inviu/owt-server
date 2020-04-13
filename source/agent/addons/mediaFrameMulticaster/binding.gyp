@@ -7,10 +7,23 @@
       '../../../core/owt_base/MediaFrameMulticaster.cpp',
       '../../../core/owt_base/MediaFramePipeline.cpp',
     ],
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR'], 
+          },
+      },
     'include_dirs': ['$(CORE_HOME)/common',
-                      '$(CORE_HOME)/owt_base'],
+                      '$(CORE_HOME)/owt_base',
+                      'D:/workspace/vcpkg/installed/x64-windows-static/include',
+                      ],
     'libraries': [
-      '-lboost_thread',
+      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_thread-vc140-mt.lib',
     ],
     'conditions': [
       [ 'OS=="mac"', {

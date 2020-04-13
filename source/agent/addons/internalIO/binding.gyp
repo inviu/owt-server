@@ -13,17 +13,29 @@
       '../../../core/owt_base/RawTransport.cpp',
       '../../../core/owt_base/SctpTransport.cpp',
     ],
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR'], 
+          },
+      },
     'include_dirs': [
       '$(CORE_HOME)/common',
       '$(CORE_HOME)/owt_base',
-      '$(CORE_HOME)/../../build/libdeps/build/include'
+      '$(CORE_HOME)/../../build/libdeps/build/include',
+      'D:/workspace/vcpkg/installed/x64-windows-static/include',
+      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
     ],
     'libraries': [
-      '-lboost_system',
-      '-lboost_thread',
-      '-llog4cxx',
-      '-L$(CORE_HOME)/../../build/libdeps/build/lib',
-      '-lusrsctp'
+      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_system-vc140-mt.lib',
+      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_thread-vc140-mt.lib',
+      '-lD:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release/log4cxx',
+      '-l$(CORE_HOME)/../../build/libdeps/usrsctp/vs/usrsctplib/Release/usrsctp.lib'
     ],
     # 'INET', 'INET6' flags must be added for usrsctp lib, otherwise the arguments of receive callback would shift
     'cflags_cc': ['-DINET', '-DINET6'],

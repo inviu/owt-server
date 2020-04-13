@@ -5,7 +5,13 @@
 #ifndef RTPHEADEREXT_H_
 #define RTPHEADEREXT_H_
 
+#ifdef WIN32
+#include <winsock2.h>
+#include <Windows.h>
+#include <stdint.h>
+#else
 #include <netinet/in.h>
+#endif
 
 class RTPExtensionTransmissionTimeOffset {
 public:

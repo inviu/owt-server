@@ -170,7 +170,7 @@ inline bool VideoFrameMixerImpl::addInput(int input, owt_base::FrameFormat forma
         decoder->addVideoDestination(compositorIn.get());
 
         boost::upgrade_to_unique_lock<boost::shared_mutex> uniqueLock(lock);
-        Input in{.source = source, .decoder = decoder, .compositorIn = compositorIn};
+        Input in{source, decoder, compositorIn};
         m_inputs[input] = in;
         return true;
     }
@@ -276,7 +276,7 @@ inline bool VideoFrameMixerImpl::addOutput(int output,
     }
 
     boost::upgrade_to_unique_lock<boost::shared_mutex> uniqueLock(lock);
-    Output out{.encoder = encoder, .streamId = streamId};
+    Output out{encoder, streamId};
     m_outputs[output] = out;
     return true;
 }

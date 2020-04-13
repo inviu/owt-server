@@ -156,7 +156,7 @@ inline bool VideoFrameTranscoderImpl::setInput(int input, owt_base::FrameFormat 
         decoder->addVideoDestination(this);
         source->addVideoDestination(decoder.get());
         boost::upgrade_to_unique_lock<boost::shared_mutex> uniqueLock(lock);
-        Input in{.source = source, .decoder = decoder};
+        Input in{source, decoder};
         m_inputs[input] = in;
         return true;
     }
@@ -250,7 +250,7 @@ inline bool VideoFrameTranscoderImpl::addOutput(int output,
 #ifdef BUILD_FOR_ANALYTICS
     Output out{.processer = processer, .analyzer = analyzer, .encoder = encoder, .streamId = streamId};
 #else
-    Output out{.processer = processer, .encoder = encoder, .streamId = streamId};
+    Output out{processer, encoder, streamId};
 #endif
     m_outputs[output] = out;
     return true;

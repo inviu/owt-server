@@ -118,7 +118,7 @@ void VCMFrameDecoder::onFrame(const Frame& frame)
 
     if (frame.payload == 0 || frame.length == 0) {
         ELOG_DEBUG_T("Null frame, request key frame");
-        FeedbackMsg msg {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+        FeedbackMsg msg {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
         deliverFeedbackMsg(msg);
         return;
     }
@@ -128,7 +128,7 @@ void VCMFrameDecoder::onFrame(const Frame& frame)
             m_needKeyFrame = false;
         } else {
             ELOG_DEBUG_T("Request key frame");
-            FeedbackMsg msg {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+            FeedbackMsg msg {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
             deliverFeedbackMsg(msg);
             return;
         }
@@ -160,7 +160,7 @@ void VCMFrameDecoder::onFrame(const Frame& frame)
         ELOG_ERROR_T("Decode frame error: %d", ret);
 
         m_needKeyFrame = true;
-        FeedbackMsg msg {.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME};
+        FeedbackMsg msg {VIDEO_FEEDBACK, REQUEST_KEY_FRAME};
         deliverFeedbackMsg(msg);
     }
 }

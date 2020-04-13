@@ -9,8 +9,9 @@
 
 #include <iostream>
 #include <fstream>
-
+#include <vector>
 #include <boost/make_shared.hpp>
+#include <future>
 
 using namespace webrtc;
 using namespace owt_base;
@@ -362,7 +363,7 @@ bool SoftFrameGenerator::addOutput(const uint32_t width, const uint32_t height, 
 
     int index = m_maxSupportedFps / fps - 1;
 
-    Output_t output{.width = width, .height = height, .fps = fps, .dest = dst};
+    Output_t output{width, height, fps, dst};
     m_outputs[index].push_back(output);
     return true;
 }
@@ -546,7 +547,8 @@ rtc::scoped_refptr<webrtc::VideoFrameBuffer> SoftFrameGenerator::layout()
         LayoutSolution::iterator regions_begin = m_layout.begin();
         LayoutSolution::iterator regions_end = m_layout.begin();
 
-        std::vector<boost::shared_ptr<boost::packaged_task<void>>> tasks;
+        std::packaged_task<void()> t;
+        std::vector<boost::shared_ptr<std::packaged_task<void()>>>  tasks;
         while (nRegions > 0) {
             if (nRegions < nParallelRegions)
                 nParallelRegions = nRegions;
@@ -554,13 +556,13 @@ rtc::scoped_refptr<webrtc::VideoFrameBuffer> SoftFrameGenerator::layout()
             regions_begin = regions_end;
             advance(regions_end, nParallelRegions);
 
-            boost::shared_ptr<boost::packaged_task<void>> task = boost::make_shared<boost::packaged_task<void>>(
+            boost::shared_ptr<std::packaged_task<void()>> task = boost::make_shared<std::packaged_task<void()>>(
                     boost::bind(SoftFrameGenerator::layout_regions,
                         this,
                         compositeBuffer,
                         LayoutSolution(regions_begin, regions_end))
                     );
-            m_srv->post(boost::bind(&boost::packaged_task<void>::operator(), task));
+            m_srv->post(boost::bind(&std::packaged_task<void()>::operator(), task));
             tasks.push_back(task);
 
             nRegions -= nParallelRegions;

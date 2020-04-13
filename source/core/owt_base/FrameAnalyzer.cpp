@@ -3,8 +3,8 @@
 // SPDX-License-Identifier: Apache-2.0
 
 #include "FrameAnalyzer.h"
-#include <dlfcn.h>
-#include <unistd.h>
+#include <compat/w32dlfcn.h>
+// #include <unistd.h>
 #include <string.h>
 #include <unordered_map>
 

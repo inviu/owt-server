@@ -4,11 +4,23 @@
     'sources': [
       'addon.cc'
     ],
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR'], 
+          },
+      },
     'include_dirs': [
+      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
       "<!(node -e \"require('nan')\")"
     ],
     'libraries': [
-      '-llog4cxx'
+      '-lD:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release/log4cxx',
     ],
     'conditions': [
       [ 'OS=="mac"', {

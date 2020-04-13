@@ -36,7 +36,7 @@
 #include <future>  // NOLINT
 
 #include <json.hpp>
-#include "ThreadPool.h"
+#include "licode/erizoAPI/ThreadPool.h"
 
 using v8::HandleScope;
 using v8::Function;
@@ -123,7 +123,7 @@ std::string MediaStream::toLog() {
   return "id: " + id_;
 }
 
-NAN_MODULE_INIT(MediaStream::Init) {
+void MediaStream::Init(v8::Local<v8::Object> target) {
   // Prepare constructor template
   Local<FunctionTemplate> tpl = Nan::New<FunctionTemplate>(New);
   tpl->SetClassName(Nan::New("MediaStream").ToLocalChecked());

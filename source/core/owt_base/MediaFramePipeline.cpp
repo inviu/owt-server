@@ -3,6 +3,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 #include "MediaFramePipeline.h"
+#include <boost\thread\lock_types.hpp>
 
 namespace owt_base {
 

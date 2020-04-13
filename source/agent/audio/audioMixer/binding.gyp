@@ -20,6 +20,18 @@
       '../../../core/owt_base/MediaFramePipeline.cpp',
       '../../../core/owt_base/AudioUtilities.cpp',
     ],
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+            'WEBRTC_WIN',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR'], 
+          },
+      },
     'cflags_cc': [
         '-Wall',
         '-O$(OPTIMIZATION_LEVEL)',
@@ -34,14 +46,18 @@
                       '$(CORE_HOME)/owt_base',
                       '$(CORE_HOME)/../../third_party/webrtc/src',
                       '$(CORE_HOME)/../../build/libdeps/build/include',
+                      'D:/workspace/vcpkg/installed/x64-windows-static/include',
+                      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
     ],
     'libraries': [
-      '-L$(CORE_HOME)/../../third_party/webrtc', '-lwebrtc',
-      '-lboost_thread',
-      '-llog4cxx',
-      '<!@(pkg-config --libs libavcodec)',
-      '<!@(pkg-config --libs libavformat)',
-      '<!@(pkg-config --libs libavutil)',
+      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_thread-vc140-mt.lib',
+      '-lD:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release/log4cxx',
+      '-l$(CORE_HOME)/../../third_party/webrtc/webrtc',
+      '-l$(CORE_HOME)/../../build/libdeps/build/bin/avutil',
+      '-l$(CORE_HOME)/../../build/libdeps/build/bin/avcodec',
+      '-l$(CORE_HOME)/../../build/libdeps/build/bin/avformat',
+      '-l$(CORE_HOME)/../../build/libdeps/build/bin/swresample',
+      '-lWinmm.lib',
     ],
   }]
 }

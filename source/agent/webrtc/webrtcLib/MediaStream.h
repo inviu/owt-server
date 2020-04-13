@@ -59,7 +59,7 @@ class StatCallWorker : public Nan::AsyncWorker {
 class MediaStream : public MediaSink, public erizo::MediaStreamStatsListener, public erizo::MediaStreamEventListener {
  public:
     DECLARE_LOGGER();
-    static NAN_MODULE_INIT(Init);
+    static void Init(v8::Local<v8::Object> target);
 
     std::shared_ptr<erizo::MediaStream> me;
     std::queue<std::string> stats_messages;

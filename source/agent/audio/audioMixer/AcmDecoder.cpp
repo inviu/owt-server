@@ -6,6 +6,7 @@
 
 #include "AudioUtilities.h"
 #include "AcmDecoder.h"
+#include <boost/thread/lock_types.hpp>
 
 namespace mcu {
 

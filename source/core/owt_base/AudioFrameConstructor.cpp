@@ -6,6 +6,7 @@
 #include "AudioUtilities.h"
 
 #include <rtputils.h>
+#include <rtp/RtpHeader.h>
 
 namespace owt_base {
 

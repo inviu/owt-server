@@ -6,6 +6,7 @@
 #include "AudioUtilities.h"
 
 #include "WebRTCTaskRunner.h"
+#include "../common/rtputils.h"
 
 using namespace webrtc;
 

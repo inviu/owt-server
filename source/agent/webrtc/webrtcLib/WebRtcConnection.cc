@@ -64,7 +64,7 @@ WebRtcConnection::~WebRtcConnection() {
   }
 }
 
-NAN_MODULE_INIT(WebRtcConnection::Init) {
+void WebRtcConnection::Init(v8::Local<v8::Object> target) {
   // Prepare constructor template
   Local<FunctionTemplate> tpl = Nan::New<FunctionTemplate>(New);
   tpl->SetClassName(Nan::New("WebRtcConnection").ToLocalChecked());
