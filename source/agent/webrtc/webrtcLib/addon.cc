@@ -3,11 +3,11 @@
 #include "VideoFrameConstructorWrapper.h"
 #include "VideoFramePacketizerWrapper.h"
 #include "WebRtcConnection.h"
-#include "licode/erizoAPI/ThreadPool.h"
-#include "licode/erizoAPI/IOThreadPool.h"
 #include "MediaStream.h"
 
 #include <node.h>
+#include <licode/erizoAPI/ThreadPool.h>
+#include <licode/erizoAPI/IOThreadPool.h>
 
 using namespace v8;
 

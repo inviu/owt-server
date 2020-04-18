@@ -21,6 +21,8 @@ extern "C" {
 
 #include <fstream>
 #include <memory>
+#include "WinPort.h"
+#include <deque>
 
 namespace owt_base {
 

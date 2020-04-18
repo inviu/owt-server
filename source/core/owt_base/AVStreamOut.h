@@ -15,6 +15,7 @@
 #include <rtputils.h>
 
 #include "MediaFramePipeline.h"
+#include "WinPort.h"
 
 extern "C" {
 #include <libavformat/avformat.h>
@@ -181,7 +182,7 @@ public:
 
     // FrameDestination
     virtual void onFrame(const Frame&);
-    virtual void onVideoSourceChanged(void) {deliverFeedbackMsg(FeedbackMsg{.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME });}
+    virtual void onVideoSourceChanged(void) {deliverFeedbackMsg(FeedbackMsg{VIDEO_FEEDBACK, REQUEST_KEY_FRAME });}
 
 protected:
     virtual bool isAudioFormatSupported(FrameFormat format) = 0;

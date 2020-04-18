@@ -27,8 +27,8 @@ const depsDir = path.join(rootDir, 'build/libdeps/build');
 const originCwd = cwd();
 
 // Detect OS script
-const osScript = path.join(rootDir, 'scripts/detectOS.sh');
-const osType = execSync(`. ${osScript}`).toString().toLowerCase();
+// const osScript = path.join(rootDir, 'scripts/detectOS.sh');
+// const osType = execSync(`. ${osScript}`).toString().toLowerCase();
 const msdkDir = '/opt/intel/mediasdk';
 
 function getTargets() {

@@ -22,6 +22,19 @@
     ],
     'dependencies': ['sipLib'],
     'cflags_cc': ['-DWEBRTC_POSIX', '-DWEBRTC_LINUX'],
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
+            'WEBRTC_WIN',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR','/FI\"winsock2.h\"','/FI\"windows.h\"']
+          },
+      },
     'include_dirs': [
       '../../../core/common',
       '../../../core/owt_base',
@@ -29,15 +42,21 @@
       '../../../../third_party/licode/erizo/src/erizo',
       '../../../../third_party/webrtc/src',
     ],
+    'library_dirs': [
+      'D:/workspace/owt-server/source/core/../../build/libdeps/build/lib',
+      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release',
+      'D:/workspace/vcpkg/installed/x64-windows-static/lib',
+    ],
     'libraries': [
-      '-L$(CORE_HOME)/../../third_party/webrtc', '-lwebrtc',
+      # '-L$(CORE_HOME)/../../third_party/webrtc', '-lwebrtc',
+      '-lD:/workspace/owt-server/source/core/../../third_party/webrtc/webrtc',
       '-llog4cxx',
       '-lboost_thread',
       '-lboost_system',
       # Add following arguments to help ldd find libraries during packing
-      '-L$(CORE_HOME)/../../build/libdeps/build/lib',
-      '-lre',
-      '-Wl,-rpath,<!(pwd)/build/$(BUILDTYPE)',
+      # '-L$(CORE_HOME)/../../build/libdeps/build/lib',
+      # '-lre',
+      # '-Wl,-rpath,<!(pwd)/build/$(BUILDTYPE)',
     ],
     'conditions': [
       [ 'OS=="mac"', {
@@ -64,20 +83,45 @@
     'direct_dependent_settings': {
         'include_dirs': ['sip_gateway'],
     },
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
+            'USE_VIDEO',
+            'USE_TLS',
+            '__STDC__',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR','/FI\"winsock2.h\"','/FI\"windows.h\"']
+          },
+      },
     'include_dirs': [
         'sip_gateway',
         'sip_gateway/sipua/include',
         '$(CORE_HOME)/common',
         '../../../../third_party/licode/erizo/src/erizo',
         '$(CORE_HOME)/../../build/libdeps/build/include',
+        'D:/workspace/vcpkg/installed/x64-windows-static/include',
+        'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
+    ],
+    'library_dirs': [
+      '$(CORE_HOME)/../../build/libdeps/build/lib',
+      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release',
+      'D:/workspace/vcpkg/installed/x64-windows-static/lib',
+      'build/release',
     ],
     'libraries': [
-        '-L<!(pwd)/sip_gateway/sipua', '-lsipua',
-        '-L$(CORE_HOME)/../../build/libdeps/build/lib',
-        '-lre',
+        '-llibsipua',
+        # '-L$(CORE_HOME)/../../build/libdeps/build/lib',
+        '-lre-win32',
         '-llog4cxx',
-        '-lboost_thread',
-        '-lboost_system',
+        '-lboost_thread-vc140-mt.lib',
+        '-lboost_system-vc140-mt.lib',
+        '-lpthreadVC3',
+        '-lIphlpapi',
     ],
     'conditions': [
       [ 'OS=="mac"', {
@@ -92,19 +136,102 @@
         'cflags_cc!': ['-fno-exceptions']
       }],
     ],
-    'actions': [
-      {
-        'action_name': 'sipua_build',
-        'inputs': [
-          '<!@(find <!(pwd)/sip_gateway/sipua -type f -name "*.h")',
-          '<!@(find <!(pwd)/sip_gateway/sipua -type f -name "*.c")',
-        ],
-        'outputs': [
-          '<!(pwd)/sip_gateway/sipua/libsipua.a'
-        ],
-        'action': ['eval', 'cd <!(pwd)/sip_gateway/sipua && make clean && make RE_HOME=$(CORE_HOME)/../../build/libdeps/build'],
-      }
-    ]
+    # 'actions': [
+    #   {
+    #     'action_name': 'sipua_build',
+    #     'inputs': [
+    #       '<!@(find <!(pwd)/sip_gateway/sipua -type f -name "*.h")',
+    #       '<!@(find <!(pwd)/sip_gateway/sipua -type f -name "*.c")',
+    #     ],
+    #     'outputs': [
+    #       '<!(pwd)/sip_gateway/sipua/libsipua.a'
+    #     ],
+    #     'action': ['eval', 'cd <!(pwd)/sip_gateway/sipua && make clean && make RE_HOME=$(CORE_HOME)/../../build/libdeps/build'],
+    #   }
+    # ]
+  },
+  {
+    'target_name': 'libsipua',
+    'type': 'static_library',
+    'sources': [
+        # 'sip_gateway/sipua/modules/dtls_srtp/dtls.c',
+        # 'sip_gateway/sipua/modules/dtls_srtp/dtls_srtp.c',
+        # 'sip_gateway/sipua/modules/dtls_srtp/dtsrtp.c',
+        'sip_gateway/sipua/modules/ice/ice.c',
+        'sip_gateway/sipua/modules/natpmp/libnatpmp.c',
+        'sip_gateway/sipua/modules/natpmp/natpmp.c',
+        'sip_gateway/sipua/modules/srtp/sdes.c',
+        'sip_gateway/sipua/modules/srtp/srtp.c',
+        'sip_gateway/sipua/modules/stun/stun.c',
+        'sip_gateway/sipua/modules/turn/turn.c',
+        # 'sip_gateway/sipua/modules/zrtp/zrtp.c',
+        'sip_gateway/sipua/src/account.c',
+        'sip_gateway/sipua/src/aucodec.c',
+        'sip_gateway/sipua/src/audio.c',
+        'sip_gateway/sipua/src/bfcp.c',
+        'sip_gateway/sipua/src/call.c',
+        'sip_gateway/sipua/src/conf.c',
+        'sip_gateway/sipua/src/log.c',
+        'sip_gateway/sipua/src/mctrl.c',
+        'sip_gateway/sipua/src/menc.c',
+        'sip_gateway/sipua/src/metric.c',
+        'sip_gateway/sipua/src/mnat.c',
+        # 'sip_gateway/sipua/src/mock_sip_gateway.c',
+        'sip_gateway/sipua/src/net.c',
+        'sip_gateway/sipua/src/realtime.c',
+        'sip_gateway/sipua/src/reg.c',
+        'sip_gateway/sipua/src/rtpkeep.c',
+        'sip_gateway/sipua/src/sdp.c',
+        'sip_gateway/sipua/src/sipreq.c',
+        'sip_gateway/sipua/src/sipua.c',
+        'sip_gateway/sipua/src/sipua_actions.c',
+        'sip_gateway/sipua/src/stream.c',
+        'sip_gateway/sipua/src/ua.c',
+        'sip_gateway/sipua/src/uag.c',
+        'sip_gateway/sipua/src/vidcodec.c',
+        'sip_gateway/sipua/src/video.c',
+    ],
+    'direct_dependent_settings': {
+        'include_dirs': ['sip_gateway'],
+    },
+    'defines': [
+            'NOMINMAX',
+            '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
+            'USE_VIDEO',
+            'USE_TLS',
+            '__STDC__',
+          ],
+    "msvs_settings": {
+          "VCCLCompilerTool": {
+            'RuntimeTypeInfo': 'true',
+            "ExceptionHandling": "1",
+            'AdditionalOptions': ['/GR','/FI\"winsock2.h\"','/FI\"windows.h\"']
+          },
+      },
+    'include_dirs': [
+        'sip_gateway',
+        'sip_gateway/sipua/include',
+        '$(CORE_HOME)/common',
+        '../../../../third_party/licode/erizo/src/erizo',
+        '$(CORE_HOME)/../../build/libdeps/build/include',
+        'D:/workspace/vcpkg/installed/x64-windows-static/include',
+        'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
+    ],
+    'library_dirs': [
+      'D:/workspace/owt-server/source/core/../../build/libdeps/build/lib',
+      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release',
+      'D:/workspace/vcpkg/installed/x64-windows-static/lib',
+    ],
+    'libraries': [
+        # '-L<!(pwd)/sip_gateway/sipua', '-lsipua',
+        # '-L$(CORE_HOME)/../../build/libdeps/build/lib',
+        '-lre-win32',
+        '-llog4cxx',
+        '-lboost_thread-vc140-mt.lib',
+        '-lboost_system-vc140-mt.lib',
+        '-lpthreadVC3',
+    ],
   },
   ]
 }

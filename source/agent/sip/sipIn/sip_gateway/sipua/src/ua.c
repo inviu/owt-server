@@ -1083,3 +1083,4 @@ const char *ua_local_cuser(const struct ua *ua)
 {
         return ua ? ua->cuser : NULL;
 }
+

@@ -71,7 +71,7 @@ void MediaFileOut::onVideoSourceChanged()
     ELOG_DEBUG("onVideoSourceChanged");
 
     setVideoSourceChanged();
-    deliverFeedbackMsg(FeedbackMsg{.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME});
+    deliverFeedbackMsg(FeedbackMsg{VIDEO_FEEDBACK, REQUEST_KEY_FRAME});
 }
 
 } // namespace owt_base

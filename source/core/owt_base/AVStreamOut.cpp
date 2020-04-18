@@ -140,7 +140,7 @@ void AVStreamOut::onFrame(const owt_base::Frame& frame)
         if (m_videoFormat == FRAME_FORMAT_UNKNOWN) {
             if (!frame.additionalInfo.video.isKeyFrame) {
                 ELOG_DEBUG("Request video key frame for initialization");
-                deliverFeedbackMsg(FeedbackMsg{.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME});
+                deliverFeedbackMsg(FeedbackMsg{VIDEO_FEEDBACK, REQUEST_KEY_FRAME});
                 return;
             }
 
@@ -176,7 +176,7 @@ void AVStreamOut::onFrame(const owt_base::Frame& frame)
         if (m_videoSourceChanged) {
             if (!frame.additionalInfo.video.isKeyFrame) {
                 ELOG_DEBUG("Request video key frame for video changed");
-                deliverFeedbackMsg(FeedbackMsg{.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME});
+                deliverFeedbackMsg(FeedbackMsg{VIDEO_FEEDBACK, REQUEST_KEY_FRAME});
                 return;
             }
 
@@ -226,7 +226,8 @@ void AVStreamOut::sendLoop()
         }
 
         timeOut += waitMs;
-        usleep(waitMs * 1000);
+        // usleep(waitMs * 1000);
+        Sleep(waitMs * 1000);
 
         ELOG_DEBUG("Wait for av options available, hasAudio(%d) - ready(%d), hasVideo(%d) - ready(%d), waitMs %d"
                 , m_hasAudio, m_audioFormat != FRAME_FORMAT_UNKNOWN, m_hasVideo, m_videoFormat != FRAME_FORMAT_UNKNOWN, timeOut);
@@ -478,7 +479,7 @@ bool AVStreamOut::writeFrame(AVStream *stream, boost::shared_ptr<MediaFrame> med
         if (m_lastKeyFrameTimestamp + 1.1 * getKeyFrameInterval() < currentTimeMs()) {
             ELOG_DEBUG("Request video key frame");
 
-            deliverFeedbackMsg(FeedbackMsg{.type = VIDEO_FEEDBACK, .cmd = REQUEST_KEY_FRAME});
+            deliverFeedbackMsg(FeedbackMsg{VIDEO_FEEDBACK, REQUEST_KEY_FRAME});
             m_lastKeyFrameTimestamp = currentTimeMs();
         }
     }

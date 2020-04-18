@@ -39,6 +39,7 @@ const originCwd = cwd();
 // Detect OS script
 const osScript = path.join(rootDir, 'scripts/detectOS.sh');
 const osType = execSync(`bash ${osScript}`).toString().toLowerCase();
+// const osType ='windows'
 
 var allTargets = [];
 

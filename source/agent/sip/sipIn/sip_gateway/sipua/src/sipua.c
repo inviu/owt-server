@@ -1,6 +1,6 @@
 #include <pthread.h>
 #include <string.h>
-#include <unistd.h>
+// #include <unistd.h>
 #include <re/re.h>
 #include <sipua.h>
 #include <baresip.h>
@@ -248,7 +248,7 @@ int sipua_mod_init(void/*const char *dlpath*/)
 	return err;
 }
 
-int usleep(unsigned long usec);
+// int usleep(unsigned long usec);
 void sipua_mod_close(void){
 	list_flush(&sipual);
 	unload_modules();
@@ -257,7 +257,8 @@ void sipua_mod_close(void){
     net_close();
 	libre_close();
 
-    usleep(40000);
+    // usleep(40000);
+    Sleep(40000);
 	/* Check for memory leaks */
 	tmr_debug();
 	mem_debug();

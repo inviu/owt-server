@@ -7,7 +7,7 @@
 #include <cstdio>
 #include <rtputils.h>
 #include <sstream>
-#include <sys/time.h>
+// #include <sys/time.h>
 #include <memory>
 
 #include "MediaUtilities.h"
@@ -216,7 +216,8 @@ void JitterBuffer::drain()
 
     while(m_buffer.size() > 0) {
         ELOG_DEBUG_T("(%s)drain jitter buffer, size(%d) ...", m_name.c_str(), m_buffer.size());
-        usleep(10);
+        // usleep(10);
+        Sleep(10);
     }
 }
 
@@ -891,7 +892,8 @@ void LiveStreamIn::receiveLoop()
             }
             deliverNullVideoFrame();
             ELOG_TRACE_T("Wait for key frame request, retry %d", i);
-            usleep(10000);
+            // usleep(10000);
+            Sleep(10000);
         }
     }
 
@@ -899,11 +901,13 @@ void LiveStreamIn::receiveLoop()
     while (m_running) {
         if (m_isFileInput) {
             if (m_videoJitterBuffer && m_videoJitterBuffer->sizeInMs() > 500) {
-                usleep(1000);
+                // usleep(1000);
+                Sleep(1000);
                 continue;
             }
             if (m_audioJitterBuffer && m_audioJitterBuffer->sizeInMs() > 500) {
-                usleep(1000);
+                // usleep(1000);
+                Sleep(1000);
                 continue;
             }
         }
