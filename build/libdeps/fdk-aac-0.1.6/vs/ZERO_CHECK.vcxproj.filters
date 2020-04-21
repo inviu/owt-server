@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\vs\CMakeFiles\25dfab14649486c7453c98aa39fe17a2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FCE4A8B9-8DE5-3A0A-9102-4E041B32A041}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

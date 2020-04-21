@@ -1,0 +1,14 @@
+prefix=D:/workspace/owt-server/build/libdeps/build
+exec_prefix=${prefix}
+libdir=D:/workspace/owt-server/build/libdeps/build/lib
+includedir=D:/workspace/owt-server/build/libdeps/build/include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.20.100
+Requires: 
+Requires.private: libavcodec >= 58.35.100, libswresample >= 3.3.100, libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: secur32.lib ws2_32.lib
+Cflags: -I${includedir}

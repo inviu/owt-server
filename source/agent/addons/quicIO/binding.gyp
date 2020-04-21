@@ -10,6 +10,7 @@
     'defines': [
             'NOMINMAX',
             '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
           ],
     "msvs_settings": {
           "VCCLCompilerTool": {
@@ -23,11 +24,11 @@
       '../../../core/owt_base',
       '../../../agent/addons/common',
       '../../../../third_party/quic-lib/dist/include',
-      'D:/workspace/vcpkg/installed/x64-windows-static/include',
+      '$(CORE_HOME)/../../third_party/boost_1.72.0/include',
     ],
     'libraries': [
-      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_system-vc140-mt.lib',
-      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_thread-vc140-mt.lib',
+      '-llibboost_thread-vc141-mt-s-x64-1_69.lib',
+      '-llibboost_system-vc141-mt-s-x64-1_69.lib',
       '-L<(module_root_dir)/../../../../third_party/quic-lib/dist/lib',
       '-lrawquic'
     ],

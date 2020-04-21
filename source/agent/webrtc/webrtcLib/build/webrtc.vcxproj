@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B44317BD-A227-269E-E64E-A3894B4B97BD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>webrtc</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\bin\;$(MSBuildProjectDirectory)\..\bin\</ExecutablePath>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <IntDir>$(Configuration)/obj/$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.node</TargetExt>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)/$(ProjectName).node</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\..\..\..\..\node_modules\nan;..\conn_handler;$(CORE_HOME)\..\..\third_party;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats;..\..\..\..\core\common;..\..\..\..\core\owt_base;..\..\..\..\core\rtc_adapter;..\..\..\..\..\third_party\webrtc\src;..\..\..\..\..\build\libdeps\build\include;..\..\..\..\..\build\libdeps\glib\include\glib-2.0;..\..\..\..\..\build\libdeps\glib\include\gio-win32-2.0;..\..\..\..\..\build\libdeps\glib\include\gnutls;..\..\..\..\..\build\libdeps\libnice-0.1.15;..\..\..\..\..\build\libdeps\libnice-0.1.15\agent;$(CORE_HOME)\..\..\third_party\boost_1.72.0\include;$(CORE_HOME)\..\..\third_party\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/GR /FI&quot;winsock2.h&quot; /FI&quot;windows.h&quot; /bigobj /MP %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4351;4355;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=webrtc;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;WEBRTC_WIN;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\\Users\\zade\\AppData\\Local\\node-gyp\\Cache\\8.15.1\\x64\\node.lib&quot;;srtp2.lib;libeay32.lib;ssleay32.lib;log4cxx.lib;boost_thread-vc140-mt.lib;boost_system-vc140-mt.lib;libnice.lib;glib-2.0.lib;gobject-2.0.lib;webrtc.lib;avutil.lib;avcodec.lib;avformat.lib;swresample.lib;openh264.lib;Winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CORE_HOME)\..\..\build\libdeps\build\lib;..\..\..\..\..\build\libdeps\glib\lib;$(CORE_HOME)\..\..\third_party\boost_1.72.0\lib\windows\x64\release;$(CORE_HOME)\..\..\third_party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <OutputFile>$(OutDir)$(ProjectName).node</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetExt>.node</TargetExt>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\..\..\..\..\node_modules\nan;..\conn_handler;$(CORE_HOME)\..\..\third_party;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats;..\..\..\..\core\common;..\..\..\..\core\owt_base;..\..\..\..\core\rtc_adapter;..\..\..\..\..\third_party\webrtc\src;..\..\..\..\..\build\libdeps\build\include;..\..\..\..\..\build\libdeps\glib\include\glib-2.0;..\..\..\..\..\build\libdeps\glib\include\gio-win32-2.0;..\..\..\..\..\build\libdeps\glib\include\gnutls;..\..\..\..\..\build\libdeps\libnice-0.1.15;..\..\..\..\..\build\libdeps\libnice-0.1.15\agent;$(CORE_HOME)\..\..\third_party\boost_1.72.0\include;$(CORE_HOME)\..\..\third_party\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=webrtc;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;WEBRTC_WIN;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\..\..\..\..\node_modules\nan;..\conn_handler;$(CORE_HOME)\..\..\third_party;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats;..\..\..\..\core\common;..\..\..\..\core\owt_base;..\..\..\..\core\rtc_adapter;..\..\..\..\..\third_party\webrtc\src;..\..\..\..\..\build\libdeps\build\include;..\..\..\..\..\build\libdeps\glib\include\glib-2.0;..\..\..\..\..\build\libdeps\glib\include\gio-win32-2.0;..\..\..\..\..\build\libdeps\glib\include\gnutls;..\..\..\..\..\build\libdeps\libnice-0.1.15;..\..\..\..\..\build\libdeps\libnice-0.1.15\agent;$(CORE_HOME)\..\..\third_party\boost_1.72.0\include;$(CORE_HOME)\..\..\third_party\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/GR /FI&quot;winsock2.h&quot; /FI&quot;windows.h&quot; /MP %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4351;4355;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=webrtc;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;WEBRTC_WIN;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\\Users\\zade\\AppData\\Local\\node-gyp\\Cache\\8.15.1\\x64\\node.lib&quot;;srtp2.lib;libeay32.lib;ssleay32.lib;log4cxx.lib;boost_thread-vc140-mt.lib;boost_system-vc140-mt.lib;libnice.lib;glib-2.0.lib;gobject-2.0.lib;webrtc.lib;avutil.lib;avcodec.lib;avformat.lib;swresample.lib;openh264.lib;Winmm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CORE_HOME)\..\..\build\libdeps\build\lib;..\..\..\..\..\build\libdeps\glib\lib;$(CORE_HOME)\..\..\third_party\boost_1.72.0\lib\windows\x64\release;$(CORE_HOME)\..\..\third_party\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <MapExports>true</MapExports>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName).node</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetExt>.node</TargetExt>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\..\..\..\..\node_modules\nan;..\conn_handler;$(CORE_HOME)\..\..\third_party;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread;$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats;..\..\..\..\core\common;..\..\..\..\core\owt_base;..\..\..\..\core\rtc_adapter;..\..\..\..\..\third_party\webrtc\src;..\..\..\..\..\build\libdeps\build\include;..\..\..\..\..\build\libdeps\glib\include\glib-2.0;..\..\..\..\..\build\libdeps\glib\include\gio-win32-2.0;..\..\..\..\..\build\libdeps\glib\include\gnutls;..\..\..\..\..\build\libdeps\libnice-0.1.15;..\..\..\..\..\build\libdeps\libnice-0.1.15\agent;$(CORE_HOME)\..\..\third_party\boost_1.72.0\include;$(CORE_HOME)\..\..\third_party\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=webrtc;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;WEBRTC_WIN;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="../binding.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../addon.cc"/>
+    <ClCompile Include="../AudioFrameConstructorWrapper.cc"/>
+    <ClCompile Include="../AudioFramePacketizerWrapper.cc"/>
+    <ClCompile Include="../VideoFrameConstructorWrapper.cc"/>
+    <ClCompile Include="../VideoFramePacketizerWrapper.cc"/>
+    <ClCompile Include="../WebRtcConnectionAddon.cc"/>
+    <ClCompile Include="../MediaStreamAddon.cc"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizoAPI\IOThreadPoolAddon.cc"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizoAPI\ThreadPoolAddon.cc"/>
+    <ClCompile Include="../conn_handler/WoogeenHandler.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\DtlsTransport.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\IceConnection.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\LibNiceConnection.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\SdpInfo.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\SrtpChannel.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\Stats.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\StringUtil.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\WebRtcConnection.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\MediaStream.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib\LibNiceInterfaceImpl.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\IOThreadPool.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\IOWorker.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\Scheduler.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\ThreadPool.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\Worker.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\PacketBufferService.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtcpForwarder.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtcpProcessorHandler.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtpUtils.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\QualityManager.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtpExtensionProcessor.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\BandwidthEstimationHandler.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls\bf_dwrap.c"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls\DtlsClient.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls\DtlsSocket.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline\Pipeline.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats\StatNode.cpp"/>
+    <ClCompile Include="../../../addons/common/NodeEventRegistry.cc"/>
+    <ClCompile Include="../../../../core/owt_base/AudioFrameConstructor.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/AudioFramePacketizer.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/AudioUtilities.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/MediaFramePipeline.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/VideoFrameConstructor.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/VideoFramePacketizer.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/SsrcGenerator.cc"/>
+    <ClCompile Include="../../../../core/rtc_adapter/VieReceiver.cc"/>
+    <ClCompile Include="../../../../core/rtc_adapter/VieRemb.cc"/>
+    <ClCompile Include="C:/Users/zade/AppData/Roaming/npm/node_modules/node-gyp/src/win_delay_load_hook.cc"/>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

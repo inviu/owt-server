@@ -1,0 +1,26 @@
+{
+  "appenders": [
+    {
+      "type": "console",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%d  - %p: %c - %m",
+        "replaceConsole": true
+      }
+    }
+  ],
+  "levels": {
+    "ClusterWorker": "DEBUG",
+    "LoadCollector": "DEBUG",
+    "AmqpClient": "DEBUG",
+    "WorkingJS": "DEBUG",
+    "NodeManager": "DEBUG",
+    "WebrtcNode": "DEBUG",
+    "WrtcConnection": "DEBUG",
+    "Connection": "DEBUG",
+    "Sdp": "DEBUG",
+    "WorkingAgent": "DEBUG",
+    "Connections": "DEBUG",
+    "InternalConnectionFactory": "DEBUG"
+  }
+}

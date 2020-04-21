@@ -1,0 +1,14 @@
+prefix=D:/workspace/owt-server/build/libdeps/build
+exec_prefix=${prefix}
+libdir=D:/workspace/owt-server/build/libdeps/build/lib
+includedir=D:/workspace/owt-server/build/libdeps/build/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 58.35.100
+Requires: 
+Requires.private: libswresample >= 3.3.100, libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: fdk-aac.lib ole32.lib user32.lib
+Cflags: -I${includedir}

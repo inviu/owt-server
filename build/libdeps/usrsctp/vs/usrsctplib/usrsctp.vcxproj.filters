@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_asconf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_auth.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_bsd_addr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_callout.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_cc_functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_crc32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_indata.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_pcb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_peeloff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sha1.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_ss_functions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sysctl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_timer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_userspace.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_usrreq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctputil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet6\sctp6_usrreq.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_environment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_mbuf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_recv_thread.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_inpcb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_ip_icmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_ip6_var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_malloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_mbuf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_recv_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_route.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_socketvar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_uma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\usrsctp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_asconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_auth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_bsd_addr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_callout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_indata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_lock_userspace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_os_userspace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_os.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_pcb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_peeloff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_process_lock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sysctl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_uio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctputil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet6\sctp6_var.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1ED78D1A-D910-3C25-B586-7D097885963A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{96A42E20-2223-3CA7-B49C-A6468FE99E79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+[submodule "third_party/licode"]
+	path = third_party/icode.git
+	url = https://github.com/inviu/licode.git
+[submodule "third_party/SVT-HEVC"]
+	path = third_party/SVT-HEVC
+	url = https://github.com/inviu/SVT-HEVC.git
+[submodule "build/libdeps/re"]
+	path = build/libdeps/re
+	url = https://github.com/inviu/re.git
+[submodule "third_party/log4cxx"]
+	path = third_party/log4cxx
+	url = https://github.com/inviu/log4cxx.git
+[submodule "third_party/boost_1.72.0"]
+	path = third_party/boost_1.72.0
+	url = https://github.com/inviu/boost_1.72.0.git

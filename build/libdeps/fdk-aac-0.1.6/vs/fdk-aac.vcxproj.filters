@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aac_ram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aac_rom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_drc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcr_bit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcrs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_pns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_tns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdecoder_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\block.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\channel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\channelinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\conceal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\ldfiltbank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\pulsedata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlcbit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlcconceal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\stereo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacEnc_ram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacEnc_rom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc_pns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc_tns.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\adj_thr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\band_nrg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\bandwidth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\bit_cnt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\bitenc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\block_switch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\channel_map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\chaosmeasure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\dyn_bits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\grp_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\intensity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\line_pe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\metadata_compressor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\metadata_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\ms_stereo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\noisedet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\pnsparam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\pre_echo_control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\psy_configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\psy_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\qc_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\quantize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\sf_estim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\spreading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\tonality.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\FDK_bitbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\FDK_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\FDK_crc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\FDK_hybrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\FDK_tools_rom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\FDK_trigFcts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\autocorr2nd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\dct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\fft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\fft_rad2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\fixpoint_math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\mdct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\qmf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libFDK\src\scale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_adif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_adts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_asc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_drm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_latm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_adif.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_adts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_asc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_latm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libPCMutils\src\limiter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libPCMutils\src\pcmutils_lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\env_calc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\env_dec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\env_extr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\huff_dec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\lpp_tran.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\psbitdec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\psdec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\psdec_hybrid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_crc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_deb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_dec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_ram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_rom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbrdec_drc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbrdec_freq_sca.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbrdecoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\bit_sbr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\code_env.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\env_bit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\env_est.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\fram_gen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\invf_est.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\mh_det.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\nf_est.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_bitenc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_encode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\resampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_encoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_ram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_rom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbrenc_freq_sca.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ton_corr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\tran_det.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSYS\src\cmdl_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSYS\src\conv_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSYS\src\genericStds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSYS\src\wav_file.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aac_ram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aac_rom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_drc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_drc_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcr_bit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcr_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_hcrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_pns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdec_tns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\aacdecoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\block.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\channel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\channelinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\conceal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\conceal_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\ldfiltbank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\overlapadd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\pulsedata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlc_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlcbit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\rvlcconceal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACdec\src\stereo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacEnc_ram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacEnc_rom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc_pns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\aacenc_tns.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\adj_thr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\adj_thr_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\band_nrg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\bandwidth.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\bit_cnt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\bitenc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\block_switch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\channel_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\chaosmeasure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\dyn_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\grp_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\intensity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\line_pe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\metadata_compressor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\metadata_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\ms_stereo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\noisedet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\pns_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\pnsparam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\pre_echo_control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\psy_configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\psy_const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\psy_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\psy_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\qc_data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\qc_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\quantize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\sf_estim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\spreading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\tns_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\tonality.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libAACenc\src\transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\mpegFileFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_adif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_adts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_drm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPDec\src\tpdec_latm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_adif.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_adts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_asc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libMpegTPEnc\src\tpenc_latm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\env_calc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\env_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\env_extr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\huff_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\lpp_tran.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\psbitdec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\psdec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\psdec_hybrid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_deb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_dec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_ram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_rom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbr_scale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbrdec_drc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\sbrdec_freq_sca.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRdec\src\transcendent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\bit_sbr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\cmondata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\code_env.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\env_bit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\env_est.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\fram_gen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\invf_est.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\mh_det.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\nf_est.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_bitenc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_encode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ps_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\resampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_ram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbr_rom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\sbrenc_freq_sca.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\ton_corr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\libSBRenc\src\tran_det.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\owt-server\build\libdeps\fdk-aac-0.1.6\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4AB22AA1-008A-37B6-9A34-DEA20525C444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5F62F5AA-7644-34FD-90C0-74F88B423E88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

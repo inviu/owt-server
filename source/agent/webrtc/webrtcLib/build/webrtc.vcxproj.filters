@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizoAPI">
+      <UniqueIdentifier>{C2358ECD-4E99-3A43-B133-DC73193A5C3C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizoAPI">
+      <UniqueIdentifier>{C2358ECD-4E99-3A43-B133-DC73193A5C3C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib">
+      <UniqueIdentifier>{2739B19F-16DF-601C-060A-FF86F6A40045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread">
+      <UniqueIdentifier>{5800A1EC-03B8-D082-0EC7-1ABE85190475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread">
+      <UniqueIdentifier>{5800A1EC-03B8-D082-0EC7-1ABE85190475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread">
+      <UniqueIdentifier>{5800A1EC-03B8-D082-0EC7-1ABE85190475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread">
+      <UniqueIdentifier>{5800A1EC-03B8-D082-0EC7-1ABE85190475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread">
+      <UniqueIdentifier>{5800A1EC-03B8-D082-0EC7-1ABE85190475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp">
+      <UniqueIdentifier>{BA7FCFF7-7644-A5EC-E5D1-35A5C4F68E09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls">
+      <UniqueIdentifier>{3B3682F8-0F13-FFF3-A9DA-98314058B3C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls">
+      <UniqueIdentifier>{3B3682F8-0F13-FFF3-A9DA-98314058B3C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls">
+      <UniqueIdentifier>{3B3682F8-0F13-FFF3-A9DA-98314058B3C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline">
+      <UniqueIdentifier>{1A62F753-D468-7B7A-02EF-EAF006A415FA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)">
+      <UniqueIdentifier>{8423DE0F-2A6A-0C35-0894-E91E211050DE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..">
+      <UniqueIdentifier>{739DB09A-CC57-A953-A6CF-F64FA08E4FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party">
+      <UniqueIdentifier>{D6C6CEA7-AAD0-03AD-2394-AC6FCBF8A498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode">
+      <UniqueIdentifier>{D5DD6422-E6C8-18EA-B444-8E28D0F48F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src">
+      <UniqueIdentifier>{8CDEE807-BC53-E450-C8B8-4DEBB66742D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo">
+      <UniqueIdentifier>{71B7D97E-519E-410D-07CD-2964E4C9D786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats">
+      <UniqueIdentifier>{7C0F8405-B5F0-F54C-A095-9E20D3CAE1ED}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../addon.cc"/>
+    <ClCompile Include="../AudioFrameConstructorWrapper.cc"/>
+    <ClCompile Include="../AudioFramePacketizerWrapper.cc"/>
+    <ClCompile Include="../VideoFrameConstructorWrapper.cc"/>
+    <ClCompile Include="../VideoFramePacketizerWrapper.cc"/>
+    <ClCompile Include="../WebRtcConnectionAddon.cc"/>
+    <ClCompile Include="../MediaStreamAddon.cc"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizoAPI\IOThreadPoolAddon.cc">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizoAPI\ThreadPoolAddon.cc">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizoAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="../conn_handler/WoogeenHandler.cpp"/>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\DtlsTransport.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\IceConnection.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\LibNiceConnection.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\SdpInfo.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\SrtpChannel.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\Stats.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\StringUtil.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\WebRtcConnection.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\MediaStream.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib\LibNiceInterfaceImpl.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\IOThreadPool.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\IOWorker.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\Scheduler.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\ThreadPool.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread\Worker.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\PacketBufferService.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtcpForwarder.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtcpProcessorHandler.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtpUtils.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\QualityManager.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\RtpExtensionProcessor.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp\BandwidthEstimationHandler.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls\bf_dwrap.c">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls\DtlsClient.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls\DtlsSocket.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\dtls</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline\Pipeline.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats\StatNode.cpp">
+      <Filter>$(CORE_HOME)\..\..\third_party\licode\erizo\src\erizo\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="../../../addons/common/NodeEventRegistry.cc"/>
+    <ClCompile Include="../../../../core/owt_base/AudioFrameConstructor.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/AudioFramePacketizer.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/AudioUtilities.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/MediaFramePipeline.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/VideoFrameConstructor.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/VideoFramePacketizer.cpp"/>
+    <ClCompile Include="../../../../core/owt_base/SsrcGenerator.cc"/>
+    <ClCompile Include="../../../../core/rtc_adapter/VieReceiver.cc"/>
+    <ClCompile Include="../../../../core/rtc_adapter/VieRemb.cc"/>
+    <ClCompile Include="C:/Users/zade/AppData/Roaming/npm/node_modules/node-gyp/src/win_delay_load_hook.cc"/>
+    <None Include="../binding.gyp"/>
+  </ItemGroup>
+</Project>

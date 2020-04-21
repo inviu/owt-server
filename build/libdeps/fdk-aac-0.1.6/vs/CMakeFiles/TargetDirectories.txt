@@ -1,0 +1,4 @@
+D:/workspace/owt-server/build/libdeps/fdk-aac-0.1.6/vs/CMakeFiles/fdk-aac.dir
+D:/workspace/owt-server/build/libdeps/fdk-aac-0.1.6/vs/CMakeFiles/INSTALL.dir
+D:/workspace/owt-server/build/libdeps/fdk-aac-0.1.6/vs/CMakeFiles/ALL_BUILD.dir
+D:/workspace/owt-server/build/libdeps/fdk-aac-0.1.6/vs/CMakeFiles/ZERO_CHECK.dir

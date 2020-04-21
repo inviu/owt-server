@@ -16,6 +16,7 @@
     'defines': [
             'NOMINMAX',
             '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
           ],
     "msvs_settings": {
           "VCCLCompilerTool": {
@@ -28,14 +29,19 @@
       '$(CORE_HOME)/common',
       '$(CORE_HOME)/owt_base',
       '$(CORE_HOME)/../../build/libdeps/build/include',
-      'D:/workspace/vcpkg/installed/x64-windows-static/include',
-      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
+      '$(CORE_HOME)/../../third_party/boost_1.72.0/include',
+      '$(CORE_HOME)/../../third_party/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
     ],
+    'library_dirs': [
+      '$(CORE_HOME)/../../build/libdeps/build/lib',
+      '$(CORE_HOME)/../../third_party/boost_1.72.0/lib/windows/x64/release',
+      '$(CORE_HOME)/../../third_party/lib',
+    ],    
     'libraries': [
-      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_system-vc140-mt.lib',
-      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_thread-vc140-mt.lib',
-      '-lD:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release/log4cxx',
-      '-l$(CORE_HOME)/../../build/libdeps/usrsctp/vs/usrsctplib/Release/usrsctp.lib'
+      '-lboost_thread-vc140-mt.lib',
+      '-lboost_system-vc140-mt.lib',
+      '-llog4cxx',
+      '-lusrsctp.lib'
     ],
     # 'INET', 'INET6' flags must be added for usrsctp lib, otherwise the arguments of receive callback would shift
     'cflags_cc': ['-DINET', '-DINET6'],

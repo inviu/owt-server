@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07913DF1-6F80-3184-2580-27EE2FE1F11C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libsipua</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\bin\;$(MSBuildProjectDirectory)\..\bin\</ExecutablePath>
+    <IntDir>$(Configuration)/obj/$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)/$(ProjectName)$(TargetExt)</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\sip_gateway;..\sip_gateway\sipua\include;$(CORE_HOME)\common;..\..\..\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\build\libdeps\build\include;D:\workspace\vcpkg\installed\x64-windows-static\include;D:\workspace\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/GR /FI&quot;winsock2.h&quot; /FI&quot;windows.h&quot; /bigobj /MP %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4351;4355;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=libsipua;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;USE_VIDEO;USE_TLS;__STDC__;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\\Users\\zade\\AppData\\Local\\node-gyp\\Cache\\8.15.1\\x64\\node.lib&quot;;re-win32.lib;log4cxx.lib;boost_thread-vc140-mt.lib;boost_system-vc140-mt.lib;pthreadVC3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\workspace\owt-server\build\libdeps\build\lib;D:\workspace\log4cxx\src\apache-log4cxx-0.10.0\projects\x64\Release;D:\workspace\vcpkg\installed\x64-windows-static\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\sip_gateway;..\sip_gateway\sipua\include;$(CORE_HOME)\common;..\..\..\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\build\libdeps\build\include;D:\workspace\vcpkg\installed\x64-windows-static\include;D:\workspace\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=libsipua;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;USE_VIDEO;USE_TLS;__STDC__;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;V8_ENABLE_CHECKS;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\sip_gateway;..\sip_gateway\sipua\include;$(CORE_HOME)\common;..\..\..\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\build\libdeps\build\include;D:\workspace\vcpkg\installed\x64-windows-static\include;D:\workspace\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/GR /FI&quot;winsock2.h&quot; /FI&quot;windows.h&quot; /MP %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4351;4355;4800;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=libsipua;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;USE_VIDEO;USE_TLS;__STDC__;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)$(TargetExt)</OutputFile>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;DelayImp.lib;&quot;C:\\Users\\zade\\AppData\\Local\\node-gyp\\Cache\\8.15.1\\x64\\node.lib&quot;;re-win32.lib;log4cxx.lib;boost_thread-vc140-mt.lib;boost_system-vc140-mt.lib;pthreadVC3.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\workspace\owt-server\build\libdeps\build\lib;D:\workspace\log4cxx\src\apache-log4cxx-0.10.0\projects\x64\Release;D:\workspace\vcpkg\installed\x64-windows-static\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4199 %(AdditionalOptions)</AdditionalOptions>
+      <AllowIsolation>true</AllowIsolation>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <MapExports>true</MapExports>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\include\node;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\src;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\config;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\openssl\openssl\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\uv\include;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\zlib;C:\Users\zade\AppData\Local\node-gyp\Cache\8.15.1\deps\v8\include;..\sip_gateway;..\sip_gateway\sipua\include;$(CORE_HOME)\common;..\..\..\..\..\third_party\licode\erizo\src\erizo;$(CORE_HOME)\..\..\build\libdeps\build\include;D:\workspace\vcpkg\installed\x64-windows-static\include;D:\workspace\log4cxx\src\apache-log4cxx-0.10.0\src\main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=libsipua;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;NOMINMAX;_WIN32_WINNT=0x0A00;WIN32_LEAN_AND_MEAN;USE_VIDEO;USE_TLS;__STDC__;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="../binding.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../sip_gateway/sipua/modules/ice/ice.c"/>
+    <ClCompile Include="../sip_gateway/sipua/modules/natpmp/libnatpmp.c"/>
+    <ClCompile Include="../sip_gateway/sipua/modules/natpmp/natpmp.c"/>
+    <ClCompile Include="../sip_gateway/sipua/modules/srtp/sdes.c"/>
+    <ClCompile Include="../sip_gateway/sipua/modules/srtp/srtp.c"/>
+    <ClCompile Include="../sip_gateway/sipua/modules/stun/stun.c"/>
+    <ClCompile Include="../sip_gateway/sipua/modules/turn/turn.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/account.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/aucodec.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/audio.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/bfcp.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/call.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/conf.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/log.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/mctrl.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/menc.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/metric.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/mnat.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/net.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/realtime.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/reg.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/rtpkeep.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/sdp.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/sipreq.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/sipua.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/sipua_actions.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/stream.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/ua.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/uag.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/vidcodec.c"/>
+    <ClCompile Include="../sip_gateway/sipua/src/video.c"/>
+    <ClCompile Include="C:/Users/zade/AppData/Roaming/npm/node_modules/node-gyp/src/win_delay_load_hook.cc"/>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

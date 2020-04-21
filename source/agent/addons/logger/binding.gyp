@@ -7,6 +7,7 @@
     'defines': [
             'NOMINMAX',
             '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
           ],
     "msvs_settings": {
           "VCCLCompilerTool": {
@@ -16,11 +17,14 @@
           },
       },
     'include_dirs': [
-      'D:/workspace/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
+      '$(CORE_HOME)/../../third_party/log4cxx/src/apache-log4cxx-0.10.0/src/main/include',
       "<!(node -e \"require('nan')\")"
     ],
+    'library_dirs': [
+      '$(CORE_HOME)/../../third_party/lib',
+    ],    
     'libraries': [
-      '-lD:/workspace/log4cxx/src/apache-log4cxx-0.10.0/projects/x64/Release/log4cxx',
+      '-llog4cxx',
     ],
     'conditions': [
       [ 'OS=="mac"', {

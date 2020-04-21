@@ -1,0 +1,14 @@
+prefix=D:/workspace/owt-server/build/libdeps/build
+exec_prefix=${prefix}
+libdir=D:/workspace/owt-server/build/libdeps/build/lib
+includedir=D:/workspace/owt-server/build/libdeps/build/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 3.3.100
+Requires: 
+Requires.private: libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: 
+Cflags: -I${includedir}

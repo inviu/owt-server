@@ -10,6 +10,7 @@
     'defines': [
             'NOMINMAX',
             '_WIN32_WINNT=0x0A00',
+            'WIN32_LEAN_AND_MEAN',
           ],
     "msvs_settings": {
           "VCCLCompilerTool": {
@@ -20,10 +21,13 @@
       },
     'include_dirs': ['$(CORE_HOME)/common',
                       '$(CORE_HOME)/owt_base',
-                      'D:/workspace/vcpkg/installed/x64-windows-static/include',
+                      '$(CORE_HOME)/../../third_party/boost_1.72.0/include',
                       ],
+    'library_dirs': [
+      '$(CORE_HOME)/../../third_party/boost_1.72.0/lib/windows/x64/release',
+    ],    
     'libraries': [
-      '-lD:/workspace/vcpkg/installed/x64-windows-static/lib/boost_thread-vc140-mt.lib',
+      '-lboost_thread-vc140-mt.lib',
     ],
     'conditions': [
       [ 'OS=="mac"', {

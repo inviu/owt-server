@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\owt-server\build\libdeps\usrsctp\vs\CMakeFiles\8be5c9e765a561362e79b034ac304dea\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B526A045-F881-3FD0-87A8-BD1DEF577025}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

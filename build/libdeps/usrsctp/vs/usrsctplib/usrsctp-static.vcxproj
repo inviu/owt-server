@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23AEC041-5FD7-3F16-BB27-11EA7E9A0BF7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>usrsctp-static</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">usrsctp-static.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">usrsctp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">usrsctp-static.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">usrsctp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">usrsctp-static.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">usrsctp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">usrsctp-static.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">usrsctp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4200;4214;4706;4245;4389;4702;4701;4244</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4200;4214;4706;4245;4389;4702;4701;4244</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4100;4127;4200;4214;4706;4245;4389;4702;4701;4244</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4100;4127;4200;4214;4706;4245;4389;4702;4701;4244</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SCTP_DEBUG;INET;INET6;__Userspace__;__Userspace_os_Windows;SCTP_SIMPLE_ALLOCATOR;SCTP_PROCESS_LEVEL_LOCKS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\workspace\vcpkg\downloads\tools\cmake-3.14.0-windows\cmake-3.14.0-win32-x86\bin\cmake.exe -SD:/workspace/owt-server/build/libdeps/usrsctp -BD:/workspace/owt-server/build/libdeps/usrsctp/vs --check-stamp-file D:/workspace/owt-server/build/libdeps/usrsctp/vs/usrsctplib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\workspace\vcpkg\downloads\tools\cmake-3.14.0-windows\cmake-3.14.0-win32-x86\bin\cmake.exe -SD:/workspace/owt-server/build/libdeps/usrsctp -BD:/workspace/owt-server/build/libdeps/usrsctp/vs --check-stamp-file D:/workspace/owt-server/build/libdeps/usrsctp/vs/usrsctplib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\workspace\vcpkg\downloads\tools\cmake-3.14.0-windows\cmake-3.14.0-win32-x86\bin\cmake.exe -SD:/workspace/owt-server/build/libdeps/usrsctp -BD:/workspace/owt-server/build/libdeps/usrsctp/vs --check-stamp-file D:/workspace/owt-server/build/libdeps/usrsctp/vs/usrsctplib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\workspace\vcpkg\downloads\tools\cmake-3.14.0-windows\cmake-3.14.0-win32-x86\bin\cmake.exe -SD:/workspace/owt-server/build/libdeps/usrsctp -BD:/workspace/owt-server/build/libdeps/usrsctp/vs --check-stamp-file D:/workspace/owt-server/build/libdeps/usrsctp/vs/usrsctplib/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/workspace/owt-server/build/libdeps/usrsctp/usrsctplib/CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\workspace\owt-server\build\libdeps\usrsctp\vs\usrsctplib\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_asconf.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_auth.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_bsd_addr.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_callout.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_cc_functions.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_crc32.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_indata.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_input.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_output.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_pcb.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_peeloff.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sha1.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_ss_functions.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sysctl.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_timer.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_userspace.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_usrreq.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctputil.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet6\sctp6_usrreq.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_environment.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_mbuf.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_recv_thread.c" />
+    <ClCompile Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_socket.c" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_atomic.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_environment.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_inpcb.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_ip_icmp.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_ip6_var.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_malloc.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_mbuf.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_queue.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_recv_thread.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_route.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_socketvar.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\user_uma.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\usrsctp.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_asconf.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_auth.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_bsd_addr.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_callout.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_constants.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_crc32.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_header.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_indata.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_input.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_lock_userspace.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_os_userspace.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_os.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_output.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_pcb.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_peeloff.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_process_lock.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sha1.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_structs.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_sysctl.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_timer.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_uio.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp_var.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctputil.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet\sctp.h" />
+    <ClInclude Include="D:\workspace\owt-server\build\libdeps\usrsctp\usrsctplib\netinet6\sctp6_var.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\workspace\owt-server\build\libdeps\usrsctp\vs\ZERO_CHECK.vcxproj">
+      <Project>{93A4A3EB-EAC5-3535-9D29-DCD3DA566154}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
