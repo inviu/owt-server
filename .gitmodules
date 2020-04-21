@@ -1,5 +1,5 @@
 [submodule "third_party/licode"]
-	path = third_party/icode.git
+	path = third_party/licode
 	url = https://github.com/inviu/licode.git
 [submodule "third_party/SVT-HEVC"]
 	path = third_party/SVT-HEVC
@@ -13,3 +13,6 @@
 [submodule "third_party/boost_1.72.0"]
 	path = third_party/boost_1.72.0
 	url = https://github.com/inviu/boost_1.72.0.git
+[submodule "third_party/webrtc/src"]
+	path = third_party/webrtc/src
+	url = https://github.com/inviu/owt-deps-webrtc
