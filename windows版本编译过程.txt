@@ -1,151 +1,3 @@
-nodejs必须特定版本
-cd ~ && \
-wget https://nodejs.org/dist/v8.15.1/node-v8.15.1-linux-x64.tar.gz && \
-mkdir -p /usr/local/lib/nodejs && \
-tar xf node-v8.15.1-linux-x64.tar.gz -C /usr/local/lib/nodejs && \
-sudo echo 'export PATH=/usr/local/lib/nodejs/node-v8.15.1-linux-x64/bin:$PATH' >> ~/.bashrc && \
-source ~/.bashrc
-
-git clone https://github.com/open-webrtc-toolkit/owt-server.git
-cd owt-server\
-git checkout v4.3 -b v4.3\
-./scripts/installDepsUnattended.sh && \
-npm install -g node-gyp graceful-fs grunt-cli && \
-./scripts/build.js -t mcu --check
-GitHub README 上写的是 -t all，但对于没有硬件加速需求/环境的情况，这样 build 会失败，对于不需要硬件加速的情况，-t mcu 即可；
-编译调试版本：
-./scripts/build.js -t mcu --check -d
-
-编译 owt-client-javascript
-cd ~ && \
-git clone https://github.com/open-webrtc-toolkit/owt-client-javascript.git
-cd owt-client-javascript && \
-git checkout v4.3 -b v4.3
-cd scripts
-npm install && grunt
-
-打包 owt-server
-cd ~/owt-server/ && \
-./scripts/pack.js -f -s ~/owt-client-javascript/dist/samples/conference/
-
-配置 owt-server
-配置、运行都是在 dist 目录下，为了运行 SFU，我们需要修改以下两处配置：
-
-编辑 webrtc_agent/agent.toml：修改 [portal] 部分里的 ip_address 为服务器公网 IP 地址， [webrtc] 部分的 network_interfaces，添加 {name = "eth2", replaced_ip_address = "192.0.2.2"}（需要把 name 设置为网卡实际名称，replaced_ip_address 设置为服务器公网 IP 地址）, maxport, minport；注意配置文件里 max 在前，min 在后，别配反了；
-编辑 portal/portal.toml：修改 [portal] 部分里的 ip_address 为服务器公网 IP 地址，ssl 按需设置为 true 或 false；
-服务器开放 TCP 3000~3004, 8080 端口，UDP minport~maxport。
-./video_agent/agent.toml
-./recording_agent/agent.toml
-./sip_agent/agent.toml
-./streaming_agent/agent.toml
-./analytics_agent/agent.toml
-./audio_agent/agent.toml
-以上可能也要改
-
-运行 owt-server
-cd ~/owt-server/dist && \
-./bin/init-all.sh --deps && \
-./bin/start-all.sh
-./bin/restart-all.sh
-如果上述过程没有发生任何错误，那么恭喜你，owt-server 就成功运行起来了，如果配置时 ssl 为 true，那可以在浏览器里访问 https://<ip>:3004/，浏览器会推流，并且会收 MCU 合成的流，访问 https://<ip>:3004/?forward=true 则不会收合成流，而是收原流。
-
-硬件加速用./init-all.sh --deps --hardware
-访问后台
-https://localhost:3300/console/ 
----------------------------------------------------------------
-1、下载编译boost，设置BOOST_ROOT环境变量，安装.\vcpkg install openssl:x64-windows-static
-debug版本很可能要debug版本的openssl
-2、创建.gclient文件，内容如下：
-solutions = [ 
-  {  
-     "managed": False,  
-     "name": "src",  
-     "url": "https://github.com/open-webrtc-toolkit/owt-client-native.git",  
-     "custom_deps": {},  
-     "deps_file": "DEPS",  
-     "safesync_url": "",  
-  },  
-]  
-target_os = [] 
-
-3、下载google依赖和webrtc
-set path=D:\workspace\webrtc\depot_tools;%path%
-set DEPOT_TOOLS_WIN_TOOLCHAIN=0
-set GYP_MSVS_VERSION=2017
-
-gclient sync
-
-//到F:\webrtc\depot_tools\bootstrap-3_8_0_chromium_8_bin\python\bin\Scripts目录下执行
-pip install pywin32
-
-
-cd D:\workspace\owt-client-native\src\scripts&&D:
-python build-win.py --gn_gen --sdk --arch "x64" --ssl_root "D:\workspace\owt-client-native\src\openssl\debug" --msdk_root "D:\Program Files (x86)\IntelSWTools\Intel(R) Media SDK 2019 R1\Software Development Kit" --output_path D:\workspace\owt-client-native\src\out
-python build-win.py --gn_gen --sdk --arch "x64" --scheme "release" --ssl_root "D:\workspace\owt-client-native\src\openssl\release" --msdk_root "D:\Program Files (x86)\IntelSWTools\Intel(R) Media SDK 2019 R1\Software Development Kit" --output_path D:\workspace\owt-client-native\src\out
-
-生成vs2017工程
-gn gen out/debug --ide=vs2017 --args="is_clang=false rtc_use_h264=false rtc_use_h265=true is_component_build=false use_lld=false rtc_build_examples=false treat_warnings_as_errors=false target_cpu=\"x64\" is_debug=true enable_iterator_debugging=false owt_use_openssl=true owt_openssl_header_root=\"D:\workspace\vcpkg\packages\openssl-windows_x64-windows-static\include\" owt_openssl_lib_root=\"D:\workspace\vcpkg\packages\openssl-windows_x64-windows-static\lib\" owt_msdk_header_root=\"D:\Program Files (x86)\IntelSWTools\Intel(R) Media SDK 2019 R1\Software Development Kit\include\" owt_msdk_lib_root=\"D:\Program Files (x86)\IntelSWTools\Intel(R) Media SDK 2019 R1\Software Development Kit\lib\x64\" rtc_include_tests=false owt_include_tests=false"
-mergelib失败：
-使用vs2017命令行,因为会用到lib.exe
----------------------------------------------------------------
-Android平台编译owt-client-native 
- 
-1．下载代码。　
-
-git clone https://github.com/inviu/owt-client-native.git src
-
-2. 切换到4.2.x分支，只有这个分支才支持Android。 
-
-git checkout -b 4.2.x origin/4.2.x
-
-3. 在src目录创建.gclient文件，并写入如下内容：
-
-
-solutions = [ 
-  {  
-     "managed": False,  
-     "name": "src",  
-     "url": "https://github.com/inviu/owt-client-native.git",  
-     "custom_deps": {},  
-     "deps_file": "DEPS",  
-     "safesync_url": "",  
-  },  
-]  
-target_os = ["android"]  
-
-4. 执行gclient sync，这个过程时间可能会很长，取决于网络。
-
-5. 进入src/build目录，执行以下两个脚本，安装所需依赖。
-
-sudo ./install-build-deps.sh
-
-sudo ./install-build-deps-android.sh
-
-6. 编译 
-
-python scripts/build_android.py
-
-编译好的动态库默认在src/out相应目录下。
----------------------------------------------------------------
-dist\conference_agent\data_access\defaults.js 默认会议室属性
-
-superServiceId: 5e5a83a1c930e2f551cee6d7
-superServiceKey: vf5gpc+zRggLPNJKMZ1OFzkFZc6Ld3015ZSemhJhGVPSQv8RxQWx7SWRDSVB4QGiBYcx8nT518Cnj0iYKltj4qOzccru729J0DihETnmP5hJiVhVpfE3g+BhnLcHSgxWCD9hLVTXcqz/ehDY6a9kynhf2Y8NA2+ufIV+UmbgCR4=
-sampleServiceId: 5e5a83a1c930e2f551cee6d8
-sampleServiceKey: Vs4FzmEtrXPHJEP56dv2wrXf3ytq6lPON51Mk0pZqapVuDjJZyiODH+19ucdr/MSFfp7p/nbF3Vae4YiLnzRTEMKB2xCr6mqDdeOE20Pz8dE1fLMRYYZEllTrVh6AQzmLsEPa+N35GEv2TwOJRbTi/XzOfjbJIQ6jRNu56dLCwo=
-
-启动的node和工作的不是同一个，可以通过htop看到，所以调试时候要注意
----------------------------------------------------------------
-owt的mcu混音逻辑
-owt业务逻辑在agent\audio\audioMixer\AcmmFrameMixer.cpp，m_mixerModule就是对应webrtc的混音模块
-webrtcv具体实现在webrtc\src\webrtc\modules\audio_conference_mixer\source\audio_conference_mixer_impl.cc中
-	AudioConferenceMixerImpl::Process
-	大概思想时选取音量最大的3个流进行行混音，生成4个混音流（前三个分别排除3路流，第四个时全部的）用于发送给3个混音对象和其他对象
-混音算法在webrtc\src\webrtc\audio\utility\audio_frame_operations.cc
-	void AudioFrameOperations::Add
-	基本是做加减法，处理数据溢出等其他情况
---------------------------------------------------------------	
-owt-server 移植到windows
 假设项目路径在D:/workspace/owt-server下
 注意自己编译的东西要复制到owt-server\build\libdeps\build或者workspace\owt-server\third_party\lib
 
@@ -190,18 +42,13 @@ third_party/openh264/openh264
 我写了个脚本，注意改路径
 
 编译webrtc，使用cmder，cmd不支持长命令行
+https://cmder.net/ 下载mini版本就行了
 cd D:\workspace\owt-server\third_party\webrtc\src
 set GYP_MSVS_VERSION=2017
 set DEPOT_TOOLS_WIN_TOOLCHAIN=0
 set GYP_GENERATORS=msvs-ninja,ninja
 set DEPOT_TOOLS_UPDATE=0
 set path=D:\workspace\webrtc\depot_tools;%path%
-powershell也行，不过命令要改:
-$env:GYP_MSVS_VERSION=2017
-$env:DEPOT_TOOLS_WIN_TOOLCHAIN=0
-$env:GYP_GENERATORS=msvs-ninja,ninja
-$env:DEPOT_TOOLS_UPDATE=0
-$env:path+=";D:\workspace\webrtc\depot_tools"
 
 gn gen out --args="target_cpu=\"x64\" use_rtti=true is_debug=false is_clang=false use_sysroot=false treat_warnings_as_errors=false rtc_include_tests=false rtc_use_openmax_dl=false rtc_enable_protobuf=false rtc_enable_sctp=false rtc_build_expat=false rtc_build_json=false rtc_build_libjpeg=false rtc_build_libsrtp=false rtc_build_openmax_dl=false rtc_build_ssl=false rtc_build_usrsctp=false libyuv_use_gflags=false libyuv_include_tests=false libyuv_disable_jpeg=true rtc_use_h264=true rtc_build_libvpx=true rtc_libvpx_build_vp9=true rtc_build_opus=true rtc_include_opus=true"
 
