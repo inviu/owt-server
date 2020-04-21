@@ -19,5 +19,4 @@ vscode.code-workspace
 
 dist/logs
 *.node
-*.dll
-*.lib
+

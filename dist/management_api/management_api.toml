@@ -1,6 +1,6 @@
 [server]
 keystorePath = "./cert/certificate.pfx"
-superserviceID = "5e96afef3139976a9849da5e"
+superserviceID = "5e9ea3ef0da2654adc503a84"
 ssl = true #if use HTTPS
 port = 3000 #default: 3000, port of server
 numberOfProcess = 4 #default: 1
