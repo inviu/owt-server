@@ -52,14 +52,15 @@ set path=D:\workspace\webrtc\depot_tools;%path%
 
 gn gen out --args="target_cpu=\"x64\" use_rtti=true is_debug=false is_clang=false use_sysroot=false treat_warnings_as_errors=false rtc_include_tests=false rtc_use_openmax_dl=false rtc_enable_protobuf=false rtc_enable_sctp=false rtc_build_expat=false rtc_build_json=false rtc_build_libjpeg=false rtc_build_libsrtp=false rtc_build_openmax_dl=false rtc_build_ssl=false rtc_build_usrsctp=false libyuv_use_gflags=false libyuv_include_tests=false libyuv_disable_jpeg=true rtc_use_h264=true rtc_build_libvpx=true rtc_libvpx_build_vp9=true rtc_build_opus=true rtc_include_opus=true"
 
-ninja -C out video_coding audio_coding audio_conference_mixer metrics_default field_trial_default rtp_rtcp remote_bitrate_estimator bitrate_controller congestion_controller rtc_event_log_impl
-
-//ninja -C out webrtc
+ninja -C out video_coding audio_coding audio_conference_mixer metrics_default field_trial_default rtp_rtcp remote_bitrate_estimator bitrate_controller congestion_controller rtc_event_log_impl  libyuv_internal
 
 使用我添加的owt-server\third_party\lib\merge_libs_win.py合并lib，webrtc.lib。注意可能需要修改lib.exe路径
 
-编译fdkaac
-里面有vs工程
+编译logcxx 里面有vs工程，lib，dll复制到owt-server/lib中
+owt-server\third_party
+
+编译fdkaac，里面有vs工程，lib复制到owt-server/build/libdeps/build/lib中
+owt-server/build/libdeps
 
 //安装freetype，不能这么用，必须vs编译的
 //pacman -S mingw-w64-x86_64-freetype
@@ -70,7 +71,7 @@ export PREFIX_DIR=D:/workspace/owt-server/build/libdeps/build
 PKG_CONFIG_PATH=${PREFIX_DIR}/lib/pkgconfig:PKG_CONFIG_PATH CFLAGS=-fPIC ./configure --toolchain=msvc --arch=x86_64 --enable-yasm --enable-asm --prefix=${PREFIX_DIR} --enable-shared --disable-static --disable-libvpx --disable-vaapi --enable-libfdk-aac --enable-nonfree --disable-doc --disable-programs --extra-cflags=-I../build/include --extra-ldflags=-LIBPATH:../build/lib &&
 make -j8 -s V=0 && make install
 
-编译usrsctp,libsrtp2,libnice（需要sdk8.1）,libre
+编译build/libdeps/usrsctp,build/libdeps/libsrtp2,build/libdeps/libnice（需要sdk8.1）,build/libdeps/libre，third_party/SvtHevcEnc
 里面有vs工程
 
 编译openssl,使用vs2017x64命令行
@@ -81,13 +82,9 @@ ms\do_win64a
 nmake -f ms\ntdll.mak
 nmake -f ms\ntdll.mak install
 
-vcpkg安装pthread，boost 1.72(我丢到owt-server\build\libdeps了)
-
-
 使用msys64调用sh脚本，目前sip模块有问题，没编译通过
 cd D:/workspace/owt-server
-node ./scripts/build.js -t video-mixer-sw -t video-transcoder-sw -t video-analyzer-sw -t internal-io -t logger -t media-frame-multicaster -t audio -t webrtc -t avstream>result.txt
-node ./scripts/build.js -t video-transcoder-sw -t video-analyzer-sw
+node ./scripts/build.js -t video-mixer-sw -t video-transcoder-sw -t video-analyzer-sw -t internal-io -t logger -t media-frame-multicaster -t audio -t webrtc -t avstream
 
 web版客户端参考原版，代码已经有了可以跳过。目前别用pack.js
 
@@ -126,7 +123,7 @@ superServiceId: 5e96afef3139976a9849da5e
 superServiceKey: 4CGB3Oj9ZcWGMeN/IzXe0P/qoasZUcWYvq/dvwq1HOQUYcTnd48hipK+di4wejfeKfhph3OwFJUXy4sG9qTq6mjlO6HdAYvMQbi+muda55qDxDhATXc/f0VoFVP3jbOSbES/zpCRAO0Q09cWhH4qUj161m/k7+CYPlZp0n8N5rA=
 sampleServiceId: 5e96afef3139976a9849da5f
 sampleServiceKey: VSgsIWAZvoiX7vSAtZ+aFFKMIdG030oHuvHLh2qpVZoLH7jNkOj6Ka2Bql3ycqgIZK7sjxP2F9XRhRfjcnxloJkC0mX/3SmZcy95YkL55le6eYScN0SFsNwJ+CWLo7kbvOxKVgDMExsiQkRQmY35uYtPx4GsSEUl2VywYpurXEU=
-修改sample对应内容
+修改sample对应sampleServiceId，sampleServiceKey
 dist\extras\basic_example\samplertcservice.js
 
 运行 owt-server
